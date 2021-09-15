@@ -1,0 +1,35 @@
+#moustache {
+    width: 116px;
+    height: 124px;
+    left: 500px;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 120px 200px 0 0 #000, 210px 200px 0 0 #000;
+}
+
+#moustache::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    top: 100px;
+    left: 25px;
+    border-bottom: solid 120px #000;
+    border-radius: 0 0 0 90%;
+    transform: rotate(-45deg);
+    transform-origin: right 150px;
+}
+
+#moustache::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    top: 100px;
+    left: 273px;
+    border-bottom: solid 120px #000;
+    border-radius: 0 0 90% 0;
+    transform: rotate(45deg);
+    transform-origin: left 145px;
+}
